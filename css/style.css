@@ -14,3 +14,5 @@ body{
 
 header{
   grid-column: span 12;
+  text-align: center;
+}
