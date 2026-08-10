@@ -11,3 +11,6 @@ body{
   background: midnightblue;
   color: azure;
 }
+
+header{
+  grid-column: span 12;
