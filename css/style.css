@@ -15,8 +15,12 @@ body{
 header{
   grid-column: span 12;
   text-align: center;
+  border-radius: 0, 50%, 50%, 0;
+  corner-shape: scoop;
 }
 main{
   grid-column-start: 3;
   grid-column-end: 10;
 }
+
+/* responsive code goes here vvv */
