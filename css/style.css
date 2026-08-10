@@ -18,5 +18,5 @@ header{
 }
 table{
   grid-column-start: 3;
-  grid-column: span 8;
+  grid-column-end: 10;
 }
