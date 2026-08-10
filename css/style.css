@@ -17,6 +17,7 @@ header{
   text-align: center;
   border-radius: 0, 50%, 50%, 0;
   corner-shape: scoop;
+  border-bottom: 3px solid slateblue;
 }
 main{
   grid-column-start: 3;
