@@ -4,4 +4,10 @@ html{
 }
 body{
   font-size: 1.6rem;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  background: midnightblue;
+  color: azure;
 }
