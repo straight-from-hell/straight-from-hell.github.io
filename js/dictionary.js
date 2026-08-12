@@ -6,7 +6,7 @@ var loopSize = 0;
 
 // console.log((list.innerHTML.match(new RegExp("<p>", "g")) || []).length);
 start = list.innerHTML.indexOf("<p>");
-end = list.innerHTML.indexOf("<p>", start+1);
+end = list.innerHTML.indexOf("</p>");
 
 for (var i = start; i < end; i++){
   if (list.innerHTML[i] == "/"){
