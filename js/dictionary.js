@@ -1,4 +1,4 @@
 // get the <p> text, split at slashes, create tables
 var list = document.getElementById("list");
 
-console.log("got here");
+console.log(list.innerHTML[17]);
