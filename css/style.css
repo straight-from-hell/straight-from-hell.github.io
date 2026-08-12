@@ -20,7 +20,7 @@ header{
 h1{
   border-radius: 0 0 50% 50%;
   corner-shape: scoop;
-  border-bottom: 3px solid slateblue;
+  border-bottom: 10px solid slateblue;
   padding-bottom: 1em;
 }
 main{
