@@ -8,7 +8,7 @@ var lastIndex = 0;
 // console.log((list.innerHTML.match(new RegExp("<p>", "g")) || []).length);
 
 for (var j = 0; j < loopSize; j++){
-  // start = list.innerHTML.indexOf("<p>");
+  start = list.innerHTML.indexOf("<p>");
   // end = list.innerHTML.indexOf("</p>");
 
   list.innerHTML = list.innerHTML.replace("<p>", "<table><td>");
