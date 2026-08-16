@@ -8,7 +8,7 @@ var lastIndex = 0;
 // console.log((list.innerHTML.match(new RegExp("<p>", "g")) || []).length);
 
 async function loadJSON() {
-  const response = await fetch("dictionary.json");
+  const response = await fetch("/js/dictionary.json");
   const wordList = await response.json();
 
   list.innerHTML = list.innerHTML.replace("test", wordList[0].entry);
