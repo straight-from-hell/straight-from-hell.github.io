@@ -7,6 +7,16 @@ var lastIndex = 0;
 
 // console.log((list.innerHTML.match(new RegExp("<p>", "g")) || []).length);
 
+async function loadJSON() {
+  const response = await fetch("dictionary.json");
+  const wordList = await response.json();
+
+  list.innerHTML = list.innerHTML.replace("test", wordList[0].entry);
+  
+}
+
+loadJSON();
+
 // for (var j = 0; j < loopSize; j++){
 //   start = list.innerHTML.indexOf("<p>");
 //   // end = list.innerHTML.indexOf("</p>");
