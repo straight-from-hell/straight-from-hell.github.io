@@ -13,7 +13,7 @@ async function loadJSON() {
 
   // list.innerHTML = list.innerHTML.replace("test", wordList[0].entry);
   console.log(wordList);
-  console.log(String(wordList[0]));
+  console.log(String(wordList[0].entry));
   
 }
 
