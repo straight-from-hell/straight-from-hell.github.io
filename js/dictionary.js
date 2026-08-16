@@ -12,7 +12,7 @@ async function loadJSON() {
   const wordList = await response.json();
 
   // list.innerHTML = list.innerHTML.replace("test", wordList[0].entry);
-  console.log(wordList[0]);
+  console.log(wordList);
   
 }
 
