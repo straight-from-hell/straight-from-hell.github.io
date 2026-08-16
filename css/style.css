@@ -30,6 +30,9 @@ main{
 
 td{
   min-width: 10vw;
+  padding-bottom: 2em;
 }
+.entry{
+  font-weight: bold;
 
 /* responsive code goes here vvv */
