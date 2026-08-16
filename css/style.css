@@ -28,4 +28,8 @@ main{
   grid-column-end: 10;
 }
 
+td{
+  min-width: 10vw;
+}
+
 /* responsive code goes here vvv */
