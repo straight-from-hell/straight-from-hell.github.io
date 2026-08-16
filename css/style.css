@@ -35,5 +35,6 @@ td{
 }
 .entry{
   font-weight: bold;
+  padding-bottom: 0;
 
 /* responsive code goes here vvv */
