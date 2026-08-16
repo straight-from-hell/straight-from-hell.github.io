@@ -33,7 +33,7 @@ td{
   padding-bottom: 2em;
   border-left: 1px dashed azure;
 }
-.entry *{
+.entry, .entry *{
   font-weight: bold;
   padding-bottom: 0 !important;
 
