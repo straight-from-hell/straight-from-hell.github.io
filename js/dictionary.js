@@ -11,7 +11,8 @@ async function loadJSON() {
   const response = await fetch("/js/dictionary.json");
   const wordList = await response.json();
 
-  list.innerHTML = list.innerHTML.replace("test", wordList[0].entry);
+  // list.innerHTML = list.innerHTML.replace("test", wordList[0].entry);
+  console.log(wordList[0]);
   
 }
 
