@@ -28,7 +28,7 @@ h1{
   corner-shape: scoop;
   border-bottom: 10px solid slateblue;
   padding-bottom: 1em;
-  outline-top: 500px solid midnightblue;
+  /* outline-top: 500px solid midnightblue; doesn't work, need new method*/
 }
 main{
   grid-column-start: 3;
