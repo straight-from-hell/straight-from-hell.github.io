@@ -41,7 +41,7 @@ td{
   padding-bottom: 0 !important;
 }
 
-.lineUnder{
+.lineUnder, .lineUnder *{
   border-bottom: 1px solid azure;
 }
 
