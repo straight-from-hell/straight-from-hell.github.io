@@ -34,6 +34,9 @@ main{
   grid-column-end: 11;
   background: midnightblue;
 }
+.spacer{
+  height: 100px;
+}
 
 td{
   min-width: 10vw;
