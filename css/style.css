@@ -15,7 +15,9 @@ body{
 header{
   grid-column: span 12;
   text-align: center;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 h1{
   border-radius: 0 0 50% 50%;
