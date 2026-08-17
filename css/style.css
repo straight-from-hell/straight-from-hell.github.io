@@ -41,7 +41,7 @@ main{
 }
 
 td{
-  min-width: 10vw;
+  min-width: 5vw;
   padding-bottom: 2em;
   border-left: 1px dashed slateblue;
   vertical-align: top;
