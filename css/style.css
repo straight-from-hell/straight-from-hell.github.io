@@ -8,7 +8,7 @@ body{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 
-  background: black;
+  background: #16161d;
   color: azure;
 }
 
