@@ -41,4 +41,8 @@ td{
   padding-bottom: 0 !important;
 }
 
+.lineUnder{
+  border-bottom: 1px solid azure;
+}
+
 /* responsive code goes here vvv */
