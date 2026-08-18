@@ -15,10 +15,12 @@ body{
 header{
   /* grid-column: span 12; */
   text-align: center;
+  vertical-align: bottom;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
+  min-height: 200px;
   background: linear-gradient(to bottom, midnightblue 60%, transparent 60%);
 }
 header *{
