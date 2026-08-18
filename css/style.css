@@ -19,7 +19,7 @@ header{
   top: 0;
   left: 0;
   width: 100vw;
-  background: linear-gradient(to bottom, midnightblue 70%, #16161d);
+  background: linear-gradient(to bottom, midnightblue 60%, transparent 60%);
 }
 header *{
   background: midnightblue;
