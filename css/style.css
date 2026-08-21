@@ -31,6 +31,7 @@ h1{
   corner-shape: scoop;
   border-bottom: 10px solid slateblue;
   padding-bottom: 1em;
+  box-shadow: 0px 15px 12px #16161d;
   /* outline-top: 500px solid midnightblue; doesn't work, need new method*/
 }
 main{
