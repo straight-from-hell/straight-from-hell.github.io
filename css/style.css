@@ -46,6 +46,7 @@ main{
 
 td{
   min-width: 5vw;
+  max-width: 22vw;
   padding-bottom: 2em;
   border-left: 1px dashed slateblue;
   vertical-align: top;
