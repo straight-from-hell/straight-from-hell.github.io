@@ -22,6 +22,7 @@ header{
   width: 100vw;
   min-height: 200px;
   background: linear-gradient(to bottom, midnightblue 60%, transparent 60%);
+  padding-top: 10px;
 }
 header *{
   background: midnightblue;
@@ -41,7 +42,7 @@ main{
   padding: 5px;
 }
 .spacer{
-  height: 200px;
+  height: 225px;
 }
 
 td{
