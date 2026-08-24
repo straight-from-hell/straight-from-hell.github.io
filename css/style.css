@@ -71,4 +71,7 @@ td{
   body{
     font-size: 1.4rem;
   }
+  td{
+    max-width: 30vw;
+  }
 }
