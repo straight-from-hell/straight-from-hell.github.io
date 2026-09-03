@@ -55,7 +55,7 @@ td{
   padding-right: 10px;
 }
 .entry, .entry *{
-  font-weight: bold;
+  font-weight: bold !important;
   padding-bottom: 0 !important;
 }
 
