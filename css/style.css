@@ -63,6 +63,11 @@ td{
   border-bottom: 1px solid azure;
 }
 
+b{
+  font-weight: normal;
+  color: slateblue;
+}
+
 /* responsive code goes here vvv */
 @media only screen and (max-width: 850px/*may need to change number*/) {
   main{
