@@ -1,0 +1,29 @@
+{
+  "words": [
+    {
+      "entry": "áako",
+      "numVal": [0, 1, 14, 20],
+      "speechPart": {"term": "pronoun", "key": "pro"},
+      "desc": "she, her"
+    },
+    {      
+      "entry": "mbègá",
+      "numVal": [3, 7, 9, 0],
+      "speechPart": {"term": "conjunction", "key": "con"},
+      "desc": "and, also, as well"
+    },
+    {
+      "entry": "efé",
+      "numVal": [6, 8, 5],
+      "speechPart": {"term": "verb", "key": "v"},
+      "desc": "to eat"
+    },
+    { 
+      "entry": "è",
+      "numVal": [7],
+      "speechPart": {"term": "conjuntion", "key": "con"},
+      "desc": "than"
+    }
+    
+  ]
+}
