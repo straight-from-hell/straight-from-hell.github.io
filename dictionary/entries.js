@@ -10,6 +10,6 @@ fetch("words.json")
   // ----- doesn't work :/ -----
 
   json.forEach(entry =>{
-    console.log(entry.entry+", "+entry.speechPart.key)})
+    console.log(entry.entry+", "+entry.speechPart.key)
   })
 })
