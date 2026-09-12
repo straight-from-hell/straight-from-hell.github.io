@@ -68,6 +68,13 @@ b{
   color: slateblue;
 }
 
+a{
+  color: slateblue;
+}
+a:hover{
+  color: azure;
+}
+
 /* responsive code goes here vvv */
 @media only screen and (max-width: 850px/*may need to change number*/) {
   main{
