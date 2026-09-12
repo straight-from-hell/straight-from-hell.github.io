@@ -16,19 +16,30 @@ fetch("words.json")
     });
 
     section = section.sort((a,b) => a.numVal[1] - b.numVal[1]);
+    makeTable(section, table);
 
-    section.forEach(entry => {
-      table.innerHTML += "<td class='entry'>"+entry.entry+"</td>";
-    });
-    // var sectionSorted;
-
-    // for (var x = 0; x <= 3; x++){
-    //   sectionSort = sorted.sort((a,b) => a.numVal[x] - b.numVal[x]);
-    // }
-    // sectionSort.forEach(entry =>{ // just gotta figure out how to do the row thing
-    //   if (entry.numVal[0] == i){
-    //     table.innerHTML += "<td class='entry'>"+entry.entry+"</td>";
-    //   }
-    // })
+    // section.forEach(entry => {
+    //   table.innerHTML += "<td class='entry'>"+entry.entry+"</td>";
+    // });
+    
   }
 });
+
+function makeTable(arr, place){
+  var indexEntry = 0;
+  var indexInfo = 0;
+
+  while (indexInfo < arr.length){
+    place.innerHTML += "<tr class='entry'>";
+    for (var i = 0; i < 3; i++){
+      place.innerHTML += "<td>"+arr[i].entry+"</td>";
+      indexEntry++;
+    }
+    place.innerHTML += "</tr><tr>";
+    for (var i = 0; i < 3; i++){
+      place.innerHTML += "<td>"+arr[i].speechPart.key+". "+arr.desc+"</td>";
+      indexInfo++;
+    }
+    place.innerHTML += "</tr>";
+  }
+}
