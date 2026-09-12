@@ -21,7 +21,8 @@ fetch("../words.json")
       wordList.push(entry.numVal); // get only the arrays of numerical values
     });
     var longest = wordList.reduce((a, b) => a.length > b.length ? a : b); // find the longest word
-    var collected, smallSec = [];
+    var collected = [];
+    var smallSec = [];
 
     for (var x = 1; x < longest.length; x++){ // repeat until there's no letters left
       smallSec = []; // empties the tracker
