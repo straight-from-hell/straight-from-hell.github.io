@@ -11,5 +11,5 @@ fetch("words.json")
 
   // json.forEach(entry =>{
   //   console.log(entry.entry+", "+entry.speechPart.key)
-  // })
+  })
 })
