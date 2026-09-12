@@ -11,7 +11,7 @@ fetch("words.json")
 
     sorted.forEach(entry => {
       if (entry.numVal[0] == i){
-        letterList.push(entry);
+        section.push(entry);
       }
     });
 
