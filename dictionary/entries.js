@@ -38,7 +38,7 @@ fetch("../words.json")
         collected.push(entry);
       });
     }
-    section = bcollected;
+    section = collected;
 
     // making arrays to use in the function that makes the tables
     wordList = [];
