@@ -47,7 +47,42 @@
       "numVal": [8, 8, 25, 19],
       "speechPart": {"term": "verb", "key": "v"},
       "desc": "to remove"
+    },
+    {      
+      "entry": "ái",
+      "numVal": [0, 12],
+      "speechPart": {"term": "demonstrative", "key": "dem"},
+      "desc": "this"
+    },
+    {
+      "entry": "ánvò",
+      "numVal": [0, 17, 30, 21],
+      "speechPart": {"term": "verb", "key": "v"},
+      "desc": "to say"
+    },
+    { 
+      "entry": "bvíiofèngkstə",
+      "numVal": [3, 30, 11, 12, 20, 8, 7, 17, 14, 24, 26, 34],
+      "speechPart": {"term": "noun", "key": "n"},
+      "desc": "armour"
+    },
+    { 
+      "entry": "ánzàunne",
+      "numVal": [0, 17, 32, 2, 28, 17, 16, 6],
+      "speechPart": {"term": "noun", "key": "n"},
+      "desc": "man"
+    },
+    {
+      "entry": "íini",
+      "numVal": [11, 12, 17, 12],
+      "speechPart": {"term": "adjective", "key": "adj"},
+      "desc": "small, miniscule"
+    },
+    { 
+      "entry": "aná",
+      "numVal": [1, 17, 0],
+      "speechPart": {"term": "postposition", "key": "pos"},
+      "desc": "before, under"
     }
-    
   ]
 }
