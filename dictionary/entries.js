@@ -38,24 +38,26 @@ fetch("../words.json")
 function makeTable(arrE, arrK, arrD, place){
   var lineEntry = 0;
   var lineInfo = 0;
-  place.innerHTML += "<table>";
+  var text = "<table>";
+  // place.innerHTML += "<table>";
 
   while (lineInfo < arrE.length){
-    place.innerHTML += "<tr class='entry'>";
+    text += "<tr class='entry'>";
     for (var i = 0; i < 3; i++){
-      place.innerHTML += "<td>"+arrE[i+lineEntry]+"</td>";
+      text += "<td>"+arrE[i+lineEntry]+"</td>";
       console.log(arrE[lineEntry]);
     }
     lineEntry+= 3;
     
-    place.innerHTML += "</tr><tr>";
+    text += "</tr><tr>";
     for (var i = 0; i < 3; i++){
-      place.innerHTML += "<td>"+arrK[i+lineInfo]+". "+arrD[i+lineInfo]+"</td>";
+      text += "<td>"+arrK[i+lineInfo]+". "+arrD[i+lineInfo]+"</td>";
     }
     lineInfo+= 3;
     
-    place.innerHTML += "</tr>";
+    text += "</tr>";
   }
 
-  place.innerHTML += "</table>";
+  text += "</table>";
+  place.innerHTML = text;
 }
