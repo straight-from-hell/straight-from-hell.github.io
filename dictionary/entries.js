@@ -24,7 +24,7 @@ fetch("words.json")
       wordList.push(entry.entry);
       keyList.push(entry.speechPart.key);
       descList.push(entry.desc);
-    }
+    })
     
     makeTable(wordList, keyList, descList, table);
 
