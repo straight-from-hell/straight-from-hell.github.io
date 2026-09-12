@@ -4,20 +4,43 @@ fetch("../words.json")
 
   // console.log(json.words);
 
-  var sorted = json.words.sort((a,b) =>  a.numVal[0] - b.numVal[0]);
-  for (var i = 0; i < 35; i++){
+  var sorted = json.words.sort((a,b) =>  a.numVal[0] - b.numVal[0]); // sort by first letter
+  for (var i = 0; i < 35; i++){ // repeat for every first letter
     var table = document.getElementById(String(i));
     var section = [];
 
-    sorted.forEach(entry => {
+    sorted.forEach(entry => { // creates a section w only words that start w the same letter
       if (entry.numVal[0] == i){
         section.push(entry);
       }
     });
 
-    section = section.sort((a,b) => a.numVal[1] - b.numVal[1]);
-
+    // section = section.sort((a,b) => a.numVal[1] - b.numVal[1]); // sort section by second letter
     var wordList = [];
+    section.forEach(entry => {
+      wordList.push(entry.numVal); // get only the arrays of numerical values
+    }
+    var longest = wordList.reduce((a, b) => a.length > b.length ? a : b); // find the longest word
+    var before, smallSec = [];
+
+    for (var x = 1; x < longest.length; x++){ // repeat until there's no letters left
+      smallSec = []; // empties the tracker
+      for (var j = 0; j < 35; j++){
+        section.forEach(entry => { 
+          if (entry.numVal[x] == j){
+            smallSec.push(entry); // get a list of only words that have the same next letter (x)
+          }
+        });
+        smallSec = smallSec.sort((a,b) => a.numVal[x+1] - b.numVal[x+1]); // sort by same letter after (x+1)
+      }
+      smallSec.forEach(entry => { // appends the words to the beginning
+        before.push(entry);
+      });
+    }
+    section = before;
+
+    // making arrays to use in the function that makes the tables
+    wordList = [];
     var keyList = [];
     var descList = [];
     section.forEach(entry => {
