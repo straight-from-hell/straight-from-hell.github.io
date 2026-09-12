@@ -38,7 +38,7 @@ fetch("../words.json")
 function makeTable(arrE, arrK, arrD, place){
   var lineEntry = 0;
   var lineInfo = 0;
-  place.innerHTML += "<tbody>";
+  place.innerHTML += "<table>";
 
   while (lineInfo < arrE.length){
     place.innerHTML += "<tr class='entry'>";
@@ -57,5 +57,5 @@ function makeTable(arrE, arrK, arrD, place){
     place.innerHTML += "</tr>";
   }
 
-  place.innerHTML += "</tbody>";
+  place.innerHTML += "</table>";
 }
