@@ -16,7 +16,17 @@ fetch("words.json")
     });
 
     section = section.sort((a,b) => a.numVal[1] - b.numVal[1]);
-    makeTable(section, table);
+
+    var wordList = [];
+    var keyList = [];
+    var descList = [];
+    section.forEach(entry => {
+      wordList.push(entry.entry);
+      keyList.push(entry.speechPart.key);
+      descList.push(entry.desc);
+    }
+    
+    makeTable(wordList, keyList, descList, table);
 
     // section.forEach(entry => {
     //   table.innerHTML += "<td class='entry'>"+entry.entry+"</td>";
@@ -25,21 +35,24 @@ fetch("words.json")
   }
 });
 
-function makeTable(arr, place){
+function makeTable(arrE, arrK, arrD, place){
   var indexEntry = 0;
   var indexInfo = 0;
+  place.innerHTML += "<tbody>";
 
-  while (indexInfo < arr.length){
+  while (indexInfo < arrE.length){
     place.innerHTML += "<tr class='entry'>";
     for (var i = 0; i < 3; i++){
-      place.innerHTML += "<td>"+arr[i].entry+"</td>";
+      place.innerHTML += "<td>"+arrE[i]+"</td>";
       indexEntry++;
     }
     place.innerHTML += "</tr><tr>";
     for (var i = 0; i < 3; i++){
-      place.innerHTML += "<td>"+arr[i].speechPart.key+". "+arr.desc+"</td>";
+      place.innerHTML += "<td>"+arrK[i]+". "+arrD[i]+"</td>";
       indexInfo++;
     }
     place.innerHTML += "</tr>";
   }
+
+  place.innerHTML += "</tbody>";
 }
