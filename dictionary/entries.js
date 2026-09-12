@@ -19,7 +19,7 @@ fetch("../words.json")
     var wordList = [];
     section.forEach(entry => {
       wordList.push(entry.numVal); // get only the arrays of numerical values
-    }
+    });
     var longest = wordList.reduce((a, b) => a.length > b.length ? a : b); // find the longest word
     var before, smallSec = [];
 
@@ -47,7 +47,7 @@ fetch("../words.json")
       wordList.push(entry.entry);
       keyList.push(entry.speechPart.key);
       descList.push(entry.desc);
-    })
+    });
     
     makeTable(wordList, keyList, descList, table);
 
