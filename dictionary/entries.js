@@ -44,13 +44,19 @@ function makeTable(arrE, arrK, arrD, place){
   while (lineInfo < arrE.length){
     text += "<tr class='entry'>";
     for (var i = 0; i < 3; i++){
+      if (arrE[i+lineEntry] === undefined){
+        break;
+      }
       text += "<td>"+arrE[i+lineEntry]+"</td>";
-      console.log(arrE[lineEntry]);
+      // console.log(arrE[lineEntry]);
     }
     lineEntry+= 3;
     
     text += "</tr><tr>";
     for (var i = 0; i < 3; i++){
+      if (arrE[i+lineInfo] === undefined){
+        break;
+      }
       text += "<td>"+arrK[i+lineInfo]+". "+arrD[i+lineInfo]+"</td>";
     }
     lineInfo+= 3;
