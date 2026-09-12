@@ -1,4 +1,4 @@
-fetch("words.json")
+fetch("../words.json")
 .then(data => data.json())
 .then(json => {
 
