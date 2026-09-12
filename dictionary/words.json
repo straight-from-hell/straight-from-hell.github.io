@@ -29,6 +29,24 @@
       "numVal": [0, 17, 32, 2, 28, 17, 14, 20],
       "speechPart": {"term": "noun", "key": "n"},
       "desc": "woman"
+    },
+    {
+      "entry": "a'á",
+      "numVal": [1, 26, 0],
+      "speechPart": {"term": "adjective", "key": "adj"},
+      "desc": "loud"
+    },
+    { 
+      "entry": "foiè",
+      "numVal": [8, 20, 12, 7],
+      "speechPart": {"term": "postposition", "key": "pos"},
+      "desc": "after, above"
+    },
+    { 
+      "entry": "ffshó",
+      "numVal": [8, 8, 25, 19],
+      "speechPart": {"term": "verb", "key": "v"},
+      "desc": "to remove"
     }
     
   ]
