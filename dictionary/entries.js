@@ -21,7 +21,7 @@ fetch("../words.json")
       wordList.push(entry.numVal); // get only the arrays of numerical values
     });
     var longest = wordList.reduce((a, b) => a.length > b.length ? a : b); // find the longest word
-    var before, smallSec = [];
+    var collected, smallSec = [];
 
     for (var x = 1; x < longest.length; x++){ // repeat until there's no letters left
       smallSec = []; // empties the tracker
@@ -34,10 +34,10 @@ fetch("../words.json")
         smallSec = smallSec.sort((a,b) => a.numVal[x+1] - b.numVal[x+1]); // sort by same letter after (x+1)
       }
       smallSec.forEach(entry => { // appends the words to the beginning
-        before.push(entry);
+        collected.push(entry);
       });
     }
-    section = before;
+    section = bcollected;
 
     // making arrays to use in the function that makes the tables
     wordList = [];
