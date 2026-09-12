@@ -42,12 +42,13 @@ function makeTable(arrE, arrK, arrD, place){
 
   while (indexInfo < arrE.length){
     place.innerHTML += "<tr class='entry'>";
-    for (var i = 0; i < 3; i++){
+    for (var i = indexEntry; i < 3+indexEntry; i++){
       place.innerHTML += "<td>"+arrE[i]+"</td>";
       indexEntry++;
+      console.log(arrE[indexEntry]);
     }
     place.innerHTML += "</tr><tr>";
-    for (var i = 0; i < 3; i++){
+    for (var i = indexInfo; i < 3+indexInfo; i++){
       place.innerHTML += "<td>"+arrK[i]+". "+arrD[i]+"</td>";
       indexInfo++;
     }
