@@ -46,11 +46,12 @@ fetch("../words.json")
     var descList = [];
     section.forEach(entry => {
       wordList.push(entry.entry);
+      console.log(entry.entry);
       keyList.push(entry.speechPart.key);
       descList.push(entry.desc);
     });
     
-    makeTable(wordList, keyList, descList, table);
+    // makeTable(wordList, keyList, descList, table);
 
     // section.forEach(entry => {
     //   table.innerHTML += "<td class='entry'>"+entry.entry+"</td>";
